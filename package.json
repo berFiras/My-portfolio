@@ -9,6 +9,8 @@
 	"author": "firas berrajah",
 	"license": "MIT",
 	"dependencies": {
-		"node-sass": "^4.10.0"
+		"node": "^11.1.0",
+		"node-sass": "^4.10.0",
+		"sass": "^1.14.3"
 	}
 }
