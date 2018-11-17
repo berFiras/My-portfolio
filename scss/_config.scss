@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #c7bcbc;
+$secondary-color: hsl(258, 94%, 53%);
 $show-home-image: true;
 $home-image: url(../img/background.jpeg);
 $background-opacity: 0.9;
@@ -25,6 +25,14 @@ $background-opacity: 0.9;
 				background: rgba($primary-color, $background-opacity);
 			}
 		}
+	}
+}
+// set text color
+@function set-text-color($color) {
+	@if (lightness($color)>40) {
+		@return #000;
+	} @else {
+		@return #ffffff;
 	}
 }
 // Media Query Mixins
